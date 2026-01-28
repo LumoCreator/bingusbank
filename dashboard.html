@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h1>BingusBank</h1>
-  <div id="balance">Загрузка...</div>
-  <button onclick="location.href='send.html'">Перевести</button>
-
-  <script src="js/app.js"></script>
-</body>
-</html>
+<link rel="stylesheet" href="css/revolut.css">
+<div class="page"><div class="panel">
+  <div class="bank-card">
+    <div>Virtual Card</div>
+    <div class="card-number" id="card"></div>
+  </div>
+  <div class="balance" id="balance">—</div>
+  <button onclick="go('send.html')">Перевести</button>
+  <button onclick="go('request.html')">Запросить (QR)</button>
+  <button onclick="go('scan.html')">Сканировать</button>
+  <button onclick="go('history.html')">История</button>
+</div></div>
+<script src="js/app.js"></script><script src="js/realtime.js"></script>
