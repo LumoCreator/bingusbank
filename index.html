@@ -1,1 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Вход</h2>
+  <input id="card" placeholder="Номер карты">
+  <button onclick="login()">Войти</button>
 
+  <script>
+    function login() {
+      localStorage.setItem("card", card.value);
+      location.href = "dashboard.html";
+    }
+  </script>
+</body>
+</html>
